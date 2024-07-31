@@ -1,0 +1,145 @@
+:root {
+  --bgColor: #d8d9db;
+  --mainColor: #110a36;
+  --lightText: #fdfff1;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--lightText);
+}
+
+.contact-section {
+  background: url("/imgs/property_mob.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 15px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  background-color: var(--bgColor);
+  text-align: center;
+  color: var(--mainColor);
+  padding: 40px 30px;
+  border-radius: 10px;
+  width: 95%;
+  max-width: 500px;
+  position: relative;
+  z-index: 1;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 180px;
+  height: auto;
+}
+
+/* Animation classes */
+.hidden {
+  opacity: 0;
+}
+
+.animate-logo {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: var(--mainColor);
+}
+
+p {
+  margin-bottom: 30px;
+  font-size: 1.5em;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  max-width: 400px;
+  margin: 20px auto 0;
+}
+
+.contact-info .button {
+  background-color: var(--mainColor);
+  color: var(--lightText);
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: background 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  transform: scale(0.9);
+  opacity: 0;
+}
+
+.contact-info .button:hover {
+  background-color: #0d0830;
+  transform: scale(1.05);
+}
+.contact-text {
+  margin-bottom: 10px;
+}
+/* Text animation */
+.button {
+  opacity: 0;
+}
+.animate-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease;
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  -o-transform: translateY(20px);
+  -webkit-transition: opacity 0.5s ease-out, transform 0.5s ease;
+  -moz-transition: opacity 0.5s ease-out, transform 0.5s ease;
+  -ms-transition: opacity 0.5s ease-out, transform 0.5s ease;
+  -o-transition: opacity 0.5s ease-out, transform 0.5s ease;
+}
+
+.animate {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  -webkit-transform: translateY(0) !important;
+  -moz-transform: translateY(0) !important;
+  -ms-transform: translateY(0) !important;
+  -o-transform: translateY(0) !important;
+}
+
+/* Button animation */
+.animate-button {
+  animation: button-animation 1s forwards;
+}
+
+@keyframes button-animation {
+  to {
+    opacity: 1;
+  }
+}
