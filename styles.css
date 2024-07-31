@@ -8,7 +8,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 100svh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,6 +172,4 @@ p {
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
   }
-  /* to {
-  } */
 }
