@@ -28,7 +28,7 @@ body {
 }
 
 .overlay {
-  background-color: #110a3673;
+  /* background-color: #110a3673; */
   position: absolute;
   top: 0;
   left: 0;
