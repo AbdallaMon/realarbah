@@ -107,7 +107,7 @@ p {
   border: none;
   border-radius: 5px;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1em;
   display: inline-block;
   opacity: 0;
   transform: translateY(20px);
