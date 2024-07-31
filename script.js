@@ -19,6 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
   buttonElements.forEach((el, index) => {
     setTimeout(() => {
       el.classList.add("animate-button");
-    }, 2000);
+    }, 1500);
   });
 });
