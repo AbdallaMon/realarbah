@@ -23,7 +23,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 15px;
+  padding: 0 15px;
 }
 
 .overlay {
